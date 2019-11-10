@@ -11,7 +11,11 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index')->name('admin.home');
-    $router->resource('users', UserController::class);
+
+    $router->resource('dessaul/navbar', NavbarController::class);//首页Navbar
+    $router->resource('dessaul/category', NavCategoryController::class);//首页Navbar
+    $router->resource('dessaul/settings', SettingsController::class);
+    $router->redirect('dessaul/settings','settings/1/edit');
 
 });
 
