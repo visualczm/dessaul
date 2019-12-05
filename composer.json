@@ -10,7 +10,8 @@
     "require": {
         "encore/laravel-admin": "^1.7",
         "fideloper/proxy": "^4.0",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "zgldh/qiniu-laravel-storage": "^0.10.3"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -60,5 +61,5 @@
 
 
     }
-    
+
 }
