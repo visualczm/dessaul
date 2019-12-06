@@ -8,7 +8,7 @@
     ],
     "license": "MIT",
     "require": {
-        "laravel/laravel":"^6.6",
+        "laravel/framework": "6.6.*",
         "encore/laravel-admin": "^1.7",
         "fideloper/proxy": "^4.0",
         "laravel/tinker": "^1.0",
