@@ -9,6 +9,7 @@ use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
+use Illuminate\Support\Facades\Route;
 
 class ProductController extends AdminController
 {
@@ -72,16 +73,15 @@ class ProductController extends AdminController
      * Make a form builder.
      * @return Form
      */
+
+
     protected function form()
     {
         $form = new Form(new Product);
-
-
+        $data=Product::findOrFail(request()->route()->parameters()['product'])->toArray();
         $form->select('parent_id',"品牌")->options(NavCategory::pluck("name","id"))
             ->load('category_id','/api/getcategory');
-        $form->select('category_id','产品类别');
-
-
+        $form->select('category_id','产品类别')->options(Category::where('navcategory_id','=',$data['parent_id'])->pluck("name","id"));
         $form->text('name', __('产品名称'));
         $form->text('model','产品型号');
         $form->image('images','图片')->removable();

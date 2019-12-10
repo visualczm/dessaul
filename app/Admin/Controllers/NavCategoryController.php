@@ -107,13 +107,4 @@ class NavCategoryController extends AdminController
     }
 
 
-
-    public function getnavcateory(Request $request)
-    {
-        $provinceId = $request->get('q');
-
-        return NavCategory::getnavcateory()->where('parent_id', $provinceId)->get(['id', DB::raw('name as text')]);
-    }
-
-
 }

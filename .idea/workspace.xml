@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2e0085a-bebe-4dfd-8e41-771c9de78b1b" name="Default Changelist" comment="限制Laravel大版本号">
-      <change afterPath="$PROJECT_DIR$/app/Admin/Controllers/CategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Admin/Controllers/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Admin/DataBase/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Admin/DataBase/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dessaul.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dessaul.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="c2e0085a-bebe-4dfd-8e41-771c9de78b1b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/NavCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/NavCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admin/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/ProductController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +166,7 @@
       <workItem from="1574141668268" duration="1292000" />
       <workItem from="1574471103042" duration="595000" />
       <workItem from="1575291739562" duration="19020000" />
-      <workItem from="1575559619532" duration="40720000" />
+      <workItem from="1575559619532" duration="57999000" />
     </task>
     <task id="LOCAL-00001" summary="fix linux lang zh-CN">
       <created>1574142940316</created>
@@ -212,7 +203,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575801368388</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="上线产品新增">
+      <created>1575942484716</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575942484716</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修复无法删除文件问题">
+      <created>1575966829449</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575966829449</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +241,8 @@
     <MESSAGE value="add qiniu cloud" />
     <MESSAGE value="限制Laravel大版本号" />
     <MESSAGE value="新增进口还是国产类别" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增进口还是国产类别" />
+    <MESSAGE value="上线产品新增" />
+    <MESSAGE value="修复无法删除文件问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复无法删除文件问题" />
   </component>
 </project>
