@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2e0085a-bebe-4dfd-8e41-771c9de78b1b" name="Default Changelist" comment="">
+    <list default="true" id="c2e0085a-bebe-4dfd-8e41-771c9de78b1b" name="Default Changelist" comment="限制Laravel大版本号">
+      <change afterPath="$PROJECT_DIR$/app/Admin/Controllers/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Admin/Controllers/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Admin/DataBase/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Admin/DataBase/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dessaul.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dessaul.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/NavCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/NavCategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Admin/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +131,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ahwes" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -166,7 +175,7 @@
       <workItem from="1574141668268" duration="1292000" />
       <workItem from="1574471103042" duration="595000" />
       <workItem from="1575291739562" duration="19020000" />
-      <workItem from="1575559619532" duration="6489000" />
+      <workItem from="1575559619532" duration="40720000" />
     </task>
     <task id="LOCAL-00001" summary="fix linux lang zh-CN">
       <created>1574142940316</created>
@@ -189,7 +198,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575560289429</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="限制Laravel大版本号">
+      <created>1575602166315</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575602166315</updated>
+    </task>
+    <task id="LOCAL-00005" summary="新增进口还是国产类别">
+      <created>1575801368388</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575801368388</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +235,7 @@
     <MESSAGE value="fix linux lang zh-CN" />
     <MESSAGE value="add qiniu cloud" />
     <MESSAGE value="限制Laravel大版本号" />
-    <option name="LAST_COMMIT_MESSAGE" value="限制Laravel大版本号" />
+    <MESSAGE value="新增进口还是国产类别" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增进口还是国产类别" />
   </component>
 </project>

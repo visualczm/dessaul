@@ -2,6 +2,7 @@
 
 use Illuminate\Routing\Router;
 
+
 Admin::routes();
 
 Route::group([
@@ -13,9 +14,10 @@ Route::group([
     $router->get('/', 'HomeController@index')->name('admin.home');
 
     $router->resource('dessaul/navbar', NavbarController::class);//首页Navbar
-    $router->resource('dessaul/category', NavCategoryController::class);//首页Navbar
+    $router->resource('dessaul/navcategory', NavCategoryController::class);//首页Navbar
     $router->resource('dessaul/settings', SettingsController::class);
-    $router->redirect('dessaul/settings','settings/1/edit');
+    $router->resource('dessaul/product', ProductController::class);
+    $router->resource('dessaul/category', CategoryController::class);
 
 });
 

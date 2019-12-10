@@ -9,6 +9,7 @@ use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
 use Illuminate\Support\Collection;
+use Illuminate\Http\Request;
 
 class NavCategoryController extends AdminController
 {
@@ -37,7 +38,7 @@ class NavCategoryController extends AdminController
         //$grid->navbars()->name();
         $grid->column('navbar.name', "导航类别")->sortable();
         $grid->column('name', "菜单名称");
-        $grid->column('type', "品牌类型")->using(['0' => '国产', '1' => '进口']);
+        //$grid->column('type', "品牌类型")->using(['0' => '国产', '1' => '进口']);
         $grid->column('created_at',"建立日期");
         $grid->column('updated_at', "修改日期");
 
@@ -78,7 +79,7 @@ class NavCategoryController extends AdminController
 
 
         $show->field('name', "菜单名称");
-        $show->field('type', "品牌类型")->using(['0' => '国产', '1' => '进口']);
+        //$show->field('type', "品牌类型")->using(['0' => '国产', '1' => '进口']);
         $show->field('created_at', "建立时间");
         $show->field('updated_at', "更新时间");
 
@@ -100,13 +101,19 @@ class NavCategoryController extends AdminController
        // $form->number('navid', __('Navid'));
         $form->select('navid',"导航类别")->options(Navbar::pluck("name","id"));
         $form->text('name',"菜单名称");
-        $form->select('type','品牌类型')->options([0 => '国产', 1 => '进口']);
+        //$form->select('type','品牌类型')->options([0 => '国产', 1 => '进口']);
 
         return $form;
     }
 
 
 
+    public function getnavcateory(Request $request)
+    {
+        $provinceId = $request->get('q');
+
+        return NavCategory::getnavcateory()->where('parent_id', $provinceId)->get(['id', DB::raw('name as text')]);
+    }
 
 
 }
