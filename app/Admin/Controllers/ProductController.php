@@ -40,7 +40,9 @@ class ProductController extends AdminController
         $grid->column('downdriver','下载驱动');
         $grid->column('created_at', '建立日期');
         $grid->column('updated_at', '更新日期');
-
+        $grid->actions(function (Grid\Displayers\Actions $actions) {
+            $actions->disableView();
+        });
 
         return $grid;
     }
@@ -55,7 +57,7 @@ class ProductController extends AdminController
     {
         $show = new Show(Product::findOrFail($id));
 
-        $show->field('id', __('Id'));
+        //$show->field('id', __('Id'));
         $show->field('parent_id', __('Parent id'));
         //$show->field('images', '产品');
         $show->field('files', '产品文件');
@@ -79,11 +81,9 @@ class ProductController extends AdminController
     {
         $form = new Form(new Product);
         if(Route::currentRouteName() == 'product.edit')
-        {$data=Product::findOrFail(request()->route()->parameters()['product'])->toArray();}
-        else {
-            $data=Product::where('parent_id')->first();
-        }
-
+        $data=Product::findOrFail(request()->route()->parameters()['product'])->toArray();
+        else
+        $data=Product::where('parent_id')->first();
         $form->select('parent_id',"品牌")->options(NavCategory::pluck("name","id"))
             ->load('category_id','/api/getcategory');
         $form->select('category_id','产品类别')->options(Category::where('navcategory_id','=',$data['parent_id'])->pluck("name","id"));
@@ -94,11 +94,6 @@ class ProductController extends AdminController
         $form->file('downfile', __('下载文件'))->removable();
         $form->file('downdriver', __('下载驱动'))->removable();
         $form->textarea('desc', __('产品说明'));
-
-
-
-
-
         return $form;
     }
 }

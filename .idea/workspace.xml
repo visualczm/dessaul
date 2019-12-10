@@ -165,7 +165,7 @@
       <workItem from="1574141668268" duration="1292000" />
       <workItem from="1574471103042" duration="595000" />
       <workItem from="1575291739562" duration="19020000" />
-      <workItem from="1575559619532" duration="59153000" />
+      <workItem from="1575559619532" duration="60187000" />
     </task>
     <task id="LOCAL-00001" summary="fix linux lang zh-CN">
       <created>1574142940316</created>
@@ -223,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576017776826</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="修复产品编辑的时候类别跑掉">
+      <created>1576018898607</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1576018898607</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
