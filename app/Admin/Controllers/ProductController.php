@@ -78,7 +78,12 @@ class ProductController extends AdminController
     protected function form()
     {
         $form = new Form(new Product);
-        $data=Product::findOrFail(request()->route()->parameters()['product'])->toArray();
+        if(Route::currentRouteName() == 'product.edit')
+        {$data=Product::findOrFail(request()->route()->parameters()['product'])->toArray();}
+        else {
+            $data=Product::where('parent_id')->first();
+        }
+
         $form->select('parent_id',"品牌")->options(NavCategory::pluck("name","id"))
             ->load('category_id','/api/getcategory');
         $form->select('category_id','产品类别')->options(Category::where('navcategory_id','=',$data['parent_id'])->pluck("name","id"));
