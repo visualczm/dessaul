@@ -8,9 +8,10 @@
     ],
     "license": "MIT",
     "require": {
-        "laravel/framework": "6.6.*",
         "encore/laravel-admin": "^1.7",
         "fideloper/proxy": "^4.0",
+        "laravel-admin-ext/wang-editor": "^1.1",
+        "laravel/framework": "6.6.*",
         "laravel/tinker": "^1.0",
         "zgldh/qiniu-laravel-storage": "^0.10.3"
     },
