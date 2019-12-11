@@ -68,7 +68,7 @@ class CasesController extends AdminController
         $form = new Form(new Cases);
         $form->select('navcategory_id',"案例类别")->options(NavCategory::where('navid',6)->pluck("name","id"));
         $form->text('name', '方案名称');
-        $form->editor('content');
+        $form->editor('content','方案内容');
         return $form;
     }
 }

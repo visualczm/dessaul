@@ -79,7 +79,7 @@ class ProductController extends AdminController
     protected function form()
     {
         $form = new Form(new Product);
-        $form->select('parent_id',"品牌")->options(NavCategory::pluck("name","id"))->load('category_id','/api/getcategory');
+        $form->select('parent_id',"品牌")->options(NavCategory::where('navid',4)->pluck("name","id"))->load('category_id','/api/getcategory');
         $form->select('category_id','产品类别')->options(function ($id){
            if($id)
            {  $data=Category::find($id)->navcategory_id;

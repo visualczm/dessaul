@@ -65,7 +65,7 @@ class CategoryController extends AdminController
     protected function form()
     {
         $form = new Form(new Category);
-        $form->select('navcategory_id',"品牌")->options(NavCategory::pluck("name","id"));
+        $form->select('navcategory_id',"品牌")->options(NavCategory::where('navid',4)->pluck("name","id"));
         $form->text('name', '产品类别');
         $form->select('type', '品牌类型')->options(['0' => '国产', '1' => '进口']);
 
