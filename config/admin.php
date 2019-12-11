@@ -298,7 +298,7 @@ return [
     | This value is used to set the background image of login page.
     |
     */
-    'login_background_image' => '',
+    'login_background_image' => 'http://res.dessaul.com/images/bingoye.png',
 
     /*
     |--------------------------------------------------------------------------
@@ -394,6 +394,15 @@ return [
     |
     */
     'extensions' => [
+        'wang-editor' => [
 
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+
+            // 编辑器的配置
+            'config' => [
+
+            ]
+        ]
     ],
 ];

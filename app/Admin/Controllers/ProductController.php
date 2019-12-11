@@ -86,7 +86,6 @@ class ProductController extends AdminController
               return Category::where('navcategory_id',$data)->pluck("name","id");
            }
         });
-        //$form->select('category_id','产品类别')->options(Category::where('navcategory_id','=',$data['parent_id'])->pluck("name","id"));
         $form->text('name', __('产品名称'));
         $form->text('model','产品型号');
         $form->image('images','图片')->removable();

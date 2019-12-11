@@ -18,6 +18,8 @@ Route::group([
     $router->resource('dessaul/settings', SettingsController::class);
     $router->resource('dessaul/product', ProductController::class);
     $router->resource('dessaul/category', CategoryController::class);
+    $router->resource('dessaul/categorycase', CategoryCaseController::class);
+    $router->resource('dessaul/case', CasesController::class);
 
 });
 
