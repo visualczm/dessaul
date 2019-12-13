@@ -19,3 +19,4 @@
  */
 
 //Encore\Admin\Form::forget(['map', 'editor']);
+Encore\Admin\Form::extend('editor', Encore\WangEditor\Editor::class);
