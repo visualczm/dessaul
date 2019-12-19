@@ -298,7 +298,7 @@ return [
     | This value is used to set the background image of login page.
     |
     */
-    'login_background_image' => 'http://res.dessaul.com/images/bingoye.png',
+    'login_background_image' => 'http://res.dessaul.com/Adminbg.jpg',
 
     /*
     |--------------------------------------------------------------------------
