@@ -21,8 +21,7 @@ Route::get('/getcategory',function (Request $request){
 
 
         $provinceId = $request->get('q');
-
-        return Category::where('navcategory_id', $provinceId)->get(['id', DB::raw('name as text')]);
+        return \App\Models\Category::where('navcategory_id', $provinceId)->get(['id', DB::raw('name as text')]);
 
 });
 

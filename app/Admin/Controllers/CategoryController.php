@@ -2,8 +2,8 @@
 
 namespace App\Admin\Controllers;
 
-use App\Admin\DataBase\Category;
-use App\Admin\DataBase\NavCategory;
+use App\Models\Category;
+use App\Models\NavCategory;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -33,7 +33,9 @@ class CategoryController extends AdminController
         $grid->column('type', '品牌类型')->using(['0' => '国产', '1' => '进口']);
         $grid->column('created_at', '建立日期');
         $grid->column('updated_at', '修改日期');
-
+        $grid->actions(function (Grid\Displayers\Actions $actions) {
+            $actions->disableView();
+        });
         return $grid;
     }
 

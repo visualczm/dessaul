@@ -2,7 +2,7 @@
 
 namespace App\Admin\Controllers;
 
-use App\Admin\DataBase\Navbar;
+use App\Models\Navbar;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -35,7 +35,9 @@ class NavbarController extends AdminController
         $grid->column('updated_at', "修改日期");
         $grid->model()->orderBy('sort', 'asc');
         $grid->disableFilter();
-
+        $grid->actions(function (Grid\Displayers\Actions $actions) {
+            $actions->disableView();
+        });
         return $grid;
     }
 

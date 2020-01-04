@@ -2,9 +2,9 @@
 
 namespace App\Admin\Controllers;
 
-use App\Admin\DataBase\Category;
-use App\Admin\DataBase\NavCategory;
-use App\Admin\DataBase\Product;
+use App\Models\Category;
+use App\Models\NavCategory;
+use App\Models\Product;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;

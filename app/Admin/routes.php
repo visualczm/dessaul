@@ -20,6 +20,8 @@ Route::group([
     $router->resource('dessaul/category', CategoryController::class);
     $router->resource('dessaul/categorycase', CategoryCaseController::class);
     $router->resource('dessaul/case', CasesController::class);
+    $router->resource('dessaul/website', WebSiteController::class);
+    $router->resource('dessaul/about', AboutController::class);
 
 });
 

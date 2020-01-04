@@ -2,8 +2,8 @@
 
 namespace App\Admin\Controllers;
 
-use App\Admin\DataBase\Navbar;
-use App\Admin\DataBase\NavCategory;
+use App\Models\Navbar;
+use App\Models\NavCategory;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -53,6 +53,9 @@ class NavCategoryController extends AdminController
             $filter->like('navbar.name', '导航类别');
 
 
+        });
+        $grid->actions(function (Grid\Displayers\Actions $actions) {
+            $actions->disableView();
         });
 
 
