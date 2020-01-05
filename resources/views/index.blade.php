@@ -150,7 +150,7 @@
     <div class="layui-row">
         <div class="layui-col-md12" style="text-align: center;">
             <div style="margin: 30px">
-                <h1>推荐产品</h1>
+                <h1>主营产品</h1>
                 <h3>Products</h3>
             </div>
         </div>
