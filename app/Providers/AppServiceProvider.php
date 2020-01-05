@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $nav= new \App\models\NavCategory();//获取产品列表
+        $nav= new \App\Models\NavCategory();//获取产品列表
         $imports=  $nav->getNavCategory(1);//进口列表
         $chinas=  $nav->getNavCategory(0);//进口列表
 
