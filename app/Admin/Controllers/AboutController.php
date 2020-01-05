@@ -68,8 +68,8 @@ class AboutController extends AdminController
     {
         $form = new Form(new About);
         $form->text('name', '名称');
-        $form->editor('about','公司资质');
-        $form->editor('mission','企业愿景');
+        $form->editor('about','公司简介');
+        $form->editor('mission','企业文化');
         $form->tools(function (Form\Tools $tools) {
 
             // 去掉`列表`按钮

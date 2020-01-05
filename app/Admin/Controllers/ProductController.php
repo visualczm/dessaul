@@ -32,6 +32,7 @@ class ProductController extends AdminController
         $grid->column('category.name', '产品类别');
         $grid->column('model','产品型号');
         $grid->column('name','产品名称');
+        $grid->column('push','推荐产品')->using(['0' => '否', '1' => '是']);;
 //        $grid->column('images','产品图片');
 //        $grid->column('desc', '产品说明');
        $grid->column('explain','说明文件');
@@ -88,6 +89,7 @@ class ProductController extends AdminController
         });
         $form->text('name', __('产品名称'));
         $form->text('model','产品型号');
+        $form->select('push', '推荐产品')->options(['0' => '否', '1' => '是']);
         $form->image('images','图片')->removable();
         $form->file('explain', __('说明文件'))->removable();
         $form->file('downfile', __('下载文件'))->removable();
