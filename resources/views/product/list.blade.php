@@ -4,6 +4,15 @@
 
     <div class="layui-container" style="background: white;margin-top: 120px;margin-bottom: 20px">
     <ul >
+        @if($products->isEmpty())
+            <div style="height: 320px">
+                <h2 style="text-align: center;padding-top: 150px;color: #363636">
+                    <i class="layui-icon layui-icon-tips" style="font-size: 52px;padding-right: 10px;color:#363636" ></i>
+                    对不起,没有找到符合的资料
+                </h2>
+            </div>
+            @endif
+
         @foreach($products as $product)
         <li id="product-list">
             <div class="layui-row">
