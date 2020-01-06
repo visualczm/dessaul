@@ -20,9 +20,11 @@ class NavCategory extends Model
             ->leftJoin('dessaul_navbar', 'dessaul_navcategory.navid', '=', 'dessaul_navbar.id')
             ->leftJoin('dessaul_category','dessaul_category.navcategory_id','=','dessaul_navcategory.id')
             ->where('dessaul_navcategory.navid','=',$categoryid)
-                 ->where('dessaul_category.type','=',$type)
+            ->where('dessaul_category.type','=',$type)
+
             ->get(["dessaul_navcategory.name as navcatename","dessaul_category.name","dessaul_category.id","dessaul_navcategory.id as navid"])
             ->groupBy('navcatename'); // 可按type分组;
+
 
         return $data;
 

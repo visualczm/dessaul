@@ -86,51 +86,18 @@
                     </a>
                 </li>
                 @endforeach
-{{--                <li id="g1">--}}
-{{--                    <div class="icon">--}}
-{{--                        <i class="layui-icon layui-icon-voice " style="font-size: 23px;padding-right: 10px" ></i>--}}
-{{--                    </div>--}}
-{{--                    <div class="info">--}}
-{{--                        <div>云微商城</div>--}}
-{{--                        <p>超会卖货的H5商城</p>--}}
-{{--                    </div>--}}
-{{--                </li>--}}
-{{--                <li id="g2">--}}
-{{--                    <div class="icon">--}}
-{{--                        <img src="statics/images/banner/icon1.png" alt="">--}}
-{{--                    </div>--}}
-{{--                    <div class="info">--}}
-{{--                        <div>云微商城</div>--}}
-{{--                        <p>超会卖货的H5商城</p>--}}
-{{--                    </div>--}}
-{{--                </li>--}}
-{{--                <li id="g3">--}}
-{{--                    <div class="icon">--}}
-{{--                        <img src="statics/images/banner/icon4.png" alt="">--}}
-{{--                    </div>--}}
-{{--                    <div class="info">--}}
-{{--                        <div>ERP</div>--}}
-{{--                        <p>订单、库存统一管理</p>--}}
-{{--                    </div>--}}
-{{--                </li>--}}
-{{--                <li id="g4">--}}
-{{--                    <div class="icon">--}}
-{{--                        <img src="statics/images/banner/icon2.png" alt="">--}}
-{{--                    </div>--}}
-{{--                    <div class="info">--}}
-{{--                        <div>入驻微选</div>--}}
-{{--                        <p>微信官方电商平台</p>--}}
-{{--                    </div>--}}
-{{--                </li>--}}
-{{--                <li id="g5">--}}
-{{--                    <div class="icon">--}}
-{{--                        <img src="statics/images/banner/icon5.png" alt="">--}}
-{{--                    </div>--}}
-{{--                    <div class="info">--}}
-{{--                        <div>云云收订</div>--}}
-{{--                        <p>40+平台对接</p>--}}
-{{--                    </div>--}}
-{{--                </li>--}}
+                <li id="g4">
+                    <a >
+                    <div class="icon">
+                        <i class="layui-icon layui-icon-voice " style="font-size: 23px;padding-right: 10px" ></i>
+                    </div>
+                    <div class="info">
+                        <div>AMETEK阿美特克-<br/>Elgar</div>
+
+                    </div>
+                        </a>
+                </li>
+
 {{--                <li id="g6">--}}
 {{--                    <div class="icon">--}}
 {{--                        <img src="statics/images/banner/icon5.png" alt="">--}}

@@ -128,7 +128,7 @@
 
                     @else
                         <li id="men_{{$navbar['sort']}}">
-                            <h2><a href="../news">{{$navbar['name']}}</a></h2>
+                            <h2><a href="#">{{$navbar['name']}}</a></h2>
                         </li>
                     @endif
 

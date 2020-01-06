@@ -11,7 +11,9 @@ class HomeController extends Controller
  {
 
      $nav= new \App\Models\NavCategory();//获取产品列表
-     $imports=  $nav->getNavCategory(1);//进口列表
+     $imports=  $nav->getNavCategory(1)->take(3);//前三笔
+
+
 
      $about=\App\Models\About::select('mission')->findOrFail(1);
 
