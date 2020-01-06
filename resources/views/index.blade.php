@@ -68,25 +68,33 @@
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination swiper-pagination-white"></div>
-{{--        <div class="swiper-nav pa">--}}
-{{--            <ul class="w1200 clearfix">--}}
+        <div class="swiper-nav pa">
+            <ul class="w1200 clearfix">
 
-{{--                @foreach($imports as $import=>$im)--}}
+                @foreach($imports as $import=>$im)
 
-{{--                <li id="g{{$loop->index+1}}" >--}}
-{{--                    <a href="/product/lists?navid={{$im[0]->navid}}">--}}
+                <li id="g{{$loop->index+1}}" >
+                    <a href="/product/lists?navid={{$im[0]->navid}}">
+                    <div class="icon">
+                        <i class="layui-icon layui-icon-voice " style="font-size: 23px;padding-right: 10px" ></i>
+{{--                        <img src="statics/images/banner/icon3.png" alt="">--}}
+                    </div>
+                    <div class="info">
+
+                        <div>{{$import}}</div>
+                    </div>
+                    </a>
+                </li>
+                @endforeach
+{{--                <li id="g1">--}}
 {{--                    <div class="icon">--}}
 {{--                        <i class="layui-icon layui-icon-voice " style="font-size: 23px;padding-right: 10px" ></i>--}}
-{{--                        <img src="statics/images/banner/icon3.png" alt="">--}}
 {{--                    </div>--}}
 {{--                    <div class="info">--}}
-
-{{--                        <div>{{preg_replace('/([\x80-\xff]*)/i','',$import)}}</div>--}}
+{{--                        <div>云微商城</div>--}}
+{{--                        <p>超会卖货的H5商城</p>--}}
 {{--                    </div>--}}
-{{--                    </a>--}}
 {{--                </li>--}}
-{{--                @endforeach--}}
-
 {{--                <li id="g2">--}}
 {{--                    <div class="icon">--}}
 {{--                        <img src="statics/images/banner/icon1.png" alt="">--}}
@@ -141,8 +149,8 @@
 {{--                        <p>40+平台对接</p>--}}
 {{--                    </div>--}}
 {{--                </li>--}}
-{{--            </ul>--}}
-{{--        </div>--}}
+            </ul>
+        </div>
     </div>
 
     <!--轮播结束-->
