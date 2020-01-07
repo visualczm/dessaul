@@ -177,11 +177,11 @@
 
         @foreach($cases as $case=>$cas)
         <div class="layui-col-md4">
-            <div class="layui-card" style="height: 280px">
+            <div class="layui-card" style="height: 320px">
                 <div class="layui-card-header"> <h2>{{$case}}</h2></div>
                 <div class="layui-card-body">
                     @foreach($cas as $ca)
-                        <p style="padding: 5px">
+                        <p style="padding: 8px 15px">
                             <a href="/solution/{{$ca->id}}">
                                 <i class="layui-icon layui-icon-right "></i>{{$ca->name}}
                             </a>

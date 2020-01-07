@@ -87,6 +87,8 @@ tr {
 
 
 /*重写LAYERUI CSS*/
+
+.layui-card-header{padding: 0 30px}
 .layui-col-md7 p {
 
     text-space: 16px;

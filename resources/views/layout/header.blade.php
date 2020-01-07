@@ -28,7 +28,7 @@
                                     <div class="info">
                                         <span>
                                             <a href="/product/lists?navid={{$ims[0]->navid}}">
-                                            {{$import}}<span class="pa" style="left:75px;"><img src="statics/images/hot.png" alt=""></span>
+                                           {{$import}}
                                             </a>
                                         </span>
                                         @foreach($ims as $im)
@@ -53,7 +53,7 @@
                                     <div class="info">
                                         <span style="font-size: 16px;color: white">
                                             <a href="/product/lists?navid={{$chs[0]->navid}}">
-                                            {{$china}}<span class="pa" style="left:35px;"><img src="statics/images/hot.png" alt=""></span>
+                                            {{$china}}
                                             </a>
                                         </span>
                                         @foreach($chs as $ch)
@@ -84,9 +84,9 @@
                                     @foreach($cases as $case=>$cas)
                                         <div class="solution">
                                             <div class="info">
-                                                <span style="font-size: 16px">
+                                                <span style="font-size: 18px">
 
-                                                 {{$case}}<span class="pa" style="left:75px;"><img src="statics/images/hot.png" alt=""></span>
+                                                 {{$case}}
 
                                                 </span>
                                                 @foreach($cas as $ca)

@@ -3,17 +3,18 @@
 @section('content')
 
     <div class="layui-container" style="background: white;margin-top: 120px;margin-bottom: 20px">
-    <ul >
+
         @if($products->isEmpty())
-            <div style="height: 320px">
+            <div style="height: 100px">
                 <h2 style="text-align: center;padding-top: 150px;color: #363636">
                     <i class="layui-icon layui-icon-tips" style="font-size: 52px;padding-right: 10px;color:#363636" ></i>
                     对不起,没有找到符合的资料
                 </h2>
             </div>
             @endif
-
+            <ul>
         @foreach($products as $product)
+
         <li id="product-list">
             <div class="layui-row">
                 <div class="layui-col-md4">
@@ -89,11 +90,13 @@
             <hr class="layui-bg-gray po-hr" />
 
         </li>
+
         @endforeach
+            </ul>
             <div class="product-page">
                 {{ $products->appends(['categoryid'=>request('categoryid'),'navid' => request('navid'),'keyword'=>request('keyword')])->links() }}
             </div>
-    </ul>
+
 
     </div>
 
