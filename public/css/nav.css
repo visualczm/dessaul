@@ -165,7 +165,7 @@ body {
 .nav .menu ul li .sub_menu .sub_menu_list .list  {
 	float: left;
 	display: block;
-	width: 260px;
+	width: 220px;
 	/*height: 243px;*/
 	padding: 10px 20px;
 	margin-right: 20px;
@@ -176,7 +176,7 @@ body {
 .nav .menu ul li .sub_menu .sub_menu_list .solution  {
     float: left;
     display: block;
-    width: 220px;
+    width: 260px;
     height: 230px;
     padding:20px;
     color: white;

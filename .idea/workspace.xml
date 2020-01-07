@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2e0085a-bebe-4dfd-8e41-771c9de78b1b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/nav.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -204,7 +203,7 @@
       <workItem from="1578052957396" duration="9137000" />
       <workItem from="1578096925382" duration="38691000" />
       <workItem from="1578263728612" duration="6816000" />
-      <workItem from="1578352084224" duration="8492000" />
+      <workItem from="1578352084224" duration="8590000" />
     </task>
     <task id="LOCAL-00001" summary="fix linux lang zh-CN">
       <created>1574142940316</created>
@@ -437,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578404643131</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="调整导航">
+      <created>1578404807716</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1578404807716</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
