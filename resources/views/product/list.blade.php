@@ -5,7 +5,7 @@
     <div class="layui-container" style="background: white;margin-top: 120px;margin-bottom: 20px">
 
         @if($products->isEmpty())
-            <div style="height: 100px">
+            <div style="height: 450px">
                 <h2 style="text-align: center;padding-top: 150px;color: #363636">
                     <i class="layui-icon layui-icon-tips" style="font-size: 52px;padding-right: 10px;color:#363636" ></i>
                     对不起,没有找到符合的资料
