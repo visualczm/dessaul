@@ -204,7 +204,7 @@
       <workItem from="1578052957396" duration="9137000" />
       <workItem from="1578096925382" duration="38691000" />
       <workItem from="1578263728612" duration="6816000" />
-      <workItem from="1578352084224" duration="2560000" />
+      <workItem from="1578352084224" duration="3830000" />
     </task>
     <task id="LOCAL-00001" summary="fix linux lang zh-CN">
       <created>1574142940316</created>
@@ -416,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578353732559</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="首页调整">
+      <created>1578363596087</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1578363596087</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
