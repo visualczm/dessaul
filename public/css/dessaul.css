@@ -10,6 +10,7 @@
     margin-top: 120px;
     background: white;
     padding: 60px;
+
 }
 
 
@@ -135,9 +136,9 @@ tr {
 
 #g1{padding-left: 100px}
 
-#solutionbook .p{line-height: 40px}
+ p.p{line-height: 40px}
 
-#solutionbook .MsoNormal{line-height: 40px}
+ p.MsoNormal{line-height: 40px}
 
 .footer .contact {left: 45px;top:45px}
 

@@ -15,6 +15,7 @@
                 <div style="margin: 50px">
                     <h1 style="color: #363636;margin-bottom: 40px"><strong>公司简介</strong></h1>
                  {!! $about->about !!}
+                    <img style="width: 100%" alt="abouts" src="http://res.dessaul.com/aboutbg.png"/>
                 </div>
             </div>
             <div class="layui-tab-item">
@@ -22,6 +23,7 @@
                 <div class="mission">
 {{--                    <h1 style="color: #363636;margin-bottom: 40px"><strong>企业文化</strong></h1>--}}
                     {!! $about->mission !!}
+
                 </div>
             </div>
             <div class="layui-tab-item">
