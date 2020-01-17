@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2e0085a-bebe-4dfd-8e41-771c9de78b1b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FireCrackers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/ahwes/fire.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dessaul.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dessaul.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/dessaul.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dessaul.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/about/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,6 +127,11 @@
       <path value="$PROJECT_DIR$/vendor/qiniu/php-sdk" />
       <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
       <path value="$PROJECT_DIR$/vendor/laravel-admin-ext/wang-editor" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/tucker-eric/eloquentfilter" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
     </include_path>
   </component>
   <component name="ProjectId" id="1UQbP0KnyZNeunlfl9qGmWSqyqw" />
@@ -131,7 +141,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -139,19 +149,19 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wwwroot\dessaul\app\Http\Controllers" />
+      <recent name="C:\wwwroot\dessaul\app\Models" />
+      <recent name="C:\wwwroot\dessaul\app\Admin\Controllers" />
+      <recent name="C:\wwwroot\dessaul\resources\lang\zh-CN" />
+      <recent name="C:\wwwroot\dessaul\public\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wwwroot\dessaul\public\images" />
       <recent name="C:\wwwroot\dessaul\app\Models" />
       <recent name="C:\wwwroot\dessaul\resources\views\layout" />
       <recent name="C:\wwwroot\dessaul\resources\views" />
       <recent name="C:\wwwroot\dessaul\public\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wwwroot\dessaul\app\Models" />
-      <recent name="C:\wwwroot\dessaul\app\Admin\Controllers" />
-      <recent name="C:\wwwroot\dessaul\app\Http\Controllers" />
-      <recent name="C:\wwwroot\dessaul\resources\lang\zh-CN" />
-      <recent name="C:\wwwroot\dessaul\public\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -206,7 +216,8 @@
       <workItem from="1578096925382" duration="38691000" />
       <workItem from="1578263728612" duration="6816000" />
       <workItem from="1578352084224" duration="8820000" />
-      <workItem from="1578483602381" duration="1822000" />
+      <workItem from="1578483602381" duration="2132000" />
+      <workItem from="1579250009204" duration="23479000" />
     </task>
     <task id="LOCAL-00001" summary="fix linux lang zh-CN">
       <created>1574142940316</created>
@@ -460,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578405067438</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="調整關於">
+      <created>1578485669580</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1578485669580</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,6 +521,7 @@
     <MESSAGE value="调整解决方案文字间距" />
     <MESSAGE value="调整导航" />
     <MESSAGE value="调整搜索结果" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整搜索结果" />
+    <MESSAGE value="調整關於" />
+    <option name="LAST_COMMIT_MESSAGE" value="調整關於" />
   </component>
 </project>

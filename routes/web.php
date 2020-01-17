@@ -27,4 +27,11 @@ Route::get('/solution/{cases}','\App\Http\Controllers\SolutionController@show');
 
 Route::get('/about','\App\Http\Controllers\AboutController@index');
 
+Route::get('/firecrackers','\App\Http\Controllers\FireCrackers@index');
+
+Route::Post('/firecrackers/post','\App\Http\Controllers\FireCrackers@createFireCrackers');
+
+
+
+
 
