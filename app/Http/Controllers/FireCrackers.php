@@ -57,7 +57,7 @@ class FireCrackers extends Controller
 //       });
 
        $img->text('承諾人', 100, 1730, function($font) {
-           $font->file(public_path().'/font/signature.ttf'); //字体的地址，地址错误会报GD库的错
+           $font->file(public_path("font/signature.ttf")); //字体的地址，地址错误会报GD库的错
            $font->size(45);
            // $font->color('#fdf6e3');
            // $font->align('center');
@@ -69,7 +69,7 @@ class FireCrackers extends Controller
 
     // use callback to define details
     $img->text($yourname, $x, 1800, function($font) {
-    $font->file(public_path().'/font/signature.ttf'); //字体的地址，地址错误会报GD库的错
+    $font->file(public_path("font/signature.ttf")); //字体的地址，地址错误会报GD库的错
     $font->size(55);
     // $font->color('#fdf6e3');
     // $font->align('center');
@@ -79,7 +79,7 @@ class FireCrackers extends Controller
 
 
 $img->text(now(), 50, 1850, function($font) {
-    $font->file(public_path().'\font\signature.ttf');
+    $font->file(public_path("font/signature.ttf"));
     $font->size(25);
     // $font->color('#fdf6e3');
     // $font->align('center');

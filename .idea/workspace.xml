@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2e0085a-bebe-4dfd-8e41-771c9de78b1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/Fire.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FireCrackers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FireCrackers.php" afterDir="false" />
     </list>
@@ -212,7 +211,7 @@
       <workItem from="1578263728612" duration="6816000" />
       <workItem from="1578352084224" duration="8820000" />
       <workItem from="1578483602381" duration="2132000" />
-      <workItem from="1579250009204" duration="25345000" />
+      <workItem from="1579250009204" duration="26480000" />
     </task>
     <task id="LOCAL-00001" summary="fix linux lang zh-CN">
       <created>1574142940316</created>
@@ -480,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579274766467</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="禁止燃放">
+      <created>1579276939397</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1579276939397</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
