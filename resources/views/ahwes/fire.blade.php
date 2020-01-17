@@ -11,36 +11,42 @@
     <script type="text/javascript" src="{{ asset('layui/layui.js') }}?v=2.5.5"></script>
 <style>
     #web_bg{
-        position:fixed;
-        top: 0;
-        left: 0;
-        margin: 0 auto;
-        width:100%;
-        height:100%;
-        max-width: 400px;
-        max-height: 700px;
-        /*min-width: 1000px;*/
-        z-index:-10;
-        zoom: 1;
-        background-color: #fff;
-        background-repeat: no-repeat;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-        background-position: center 0;
-        background-image: url({{$imgpath[0]}});
+        /*position:fixed;*/
+        /*top: 0;*/
+        /*left: 0;*/
+        /*margin: 0 auto;*/
+        /*width:100%;*/
+        /*!*height:100%;*!*/
+        /*!*max-width: 400px;*!*/
+        min-height: 667px;
+        /*!*!*min-width: 1000px;*!*!*/
+        /*!*z-index:-10;*!*/
+        /*!*zoom: 1;*!*/
+        /*background-color: #fff;*/
+        /*background-repeat: no-repeat;*/
+        /*background-size: cover;*/
+        /*-webkit-background-size: cover;*/
+        /*-o-background-size: cover;*/
+        /*background-position: center 0;*/
+        background-image:url({{$imgpath[0]}});
+
+        background-size: 100% 100%;
+        min-width: 375px;
     }
+
+
 
     .layui-input-block{width:50%;margin: 0 auto}
 
     .layui-input{background-color: transparent;font-size: 25px;color: white}
 
-    .layui-input .layui-textarea{ }
+    .layui-container{padding: 0}
 </style>
 </head>
 <body>
-
-        <div id="web_bg">
+<div class="layui-container">
+        <div class="layui-row" >
+            <div class="layui-col-md12" id="web_bg">
 
             <div style="position:absolute;bottom: 0;height: 190px;width: 100%" >
                 <div class="layui-input-block">
@@ -50,14 +56,16 @@
 
                 </div>
             </div>
-
         </div>
 
         <div class="poster-box" style="display: none;">
         <img class="poster-img" src=""/>
         </div>
 
+        </div>
 
+</div>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
 <script>
 
     layui.use(['jquery',['layer']], function(){
@@ -90,7 +98,7 @@
                     $(".poster-img").width($(window).width()-30);
                     $(".poster-img").height($(window).height()-80);
                     layer.open({
-                        offset: ['40px', '10px'],
+
                         type: 1,
                         shade: false,
                         title: false, //不显示标题
@@ -119,6 +127,7 @@
         var r = window.location.search.substr(1).match(reg);  //匹配目标参数
         if (r != null) return unescape(r[2]); return null; //返回参数值
     }
+
 
 
 </script>
