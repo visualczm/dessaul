@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2e0085a-bebe-4dfd-8e41-771c9de78b1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FireCrackers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/ahwes/fire.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dessaul.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dessaul.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Fire.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FireCrackers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FireCrackers.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +136,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -150,8 +145,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wwwroot\dessaul\app\Http\Controllers" />
       <recent name="C:\wwwroot\dessaul\app\Models" />
+      <recent name="C:\wwwroot\dessaul\app\Http\Controllers" />
       <recent name="C:\wwwroot\dessaul\app\Admin\Controllers" />
       <recent name="C:\wwwroot\dessaul\resources\lang\zh-CN" />
       <recent name="C:\wwwroot\dessaul\public\images" />
@@ -217,7 +212,7 @@
       <workItem from="1578263728612" duration="6816000" />
       <workItem from="1578352084224" duration="8820000" />
       <workItem from="1578483602381" duration="2132000" />
-      <workItem from="1579250009204" duration="23479000" />
+      <workItem from="1579250009204" duration="25345000" />
     </task>
     <task id="LOCAL-00001" summary="fix linux lang zh-CN">
       <created>1574142940316</created>
@@ -478,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578485669580</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="禁止燃放">
+      <created>1579274766467</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1579274766467</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,6 +524,7 @@
     <MESSAGE value="调整导航" />
     <MESSAGE value="调整搜索结果" />
     <MESSAGE value="調整關於" />
-    <option name="LAST_COMMIT_MESSAGE" value="調整關於" />
+    <MESSAGE value="禁止燃放" />
+    <option name="LAST_COMMIT_MESSAGE" value="禁止燃放" />
   </component>
 </project>
