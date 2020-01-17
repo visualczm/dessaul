@@ -18,7 +18,7 @@
         /*width:100%;*/
         /*!*height:100%;*!*/
         /*!*max-width: 400px;*!*/
-        min-height: 667px;
+        min-height: 750px;
         /*!*!*min-width: 1000px;*!*!*/
         /*!*z-index:-10;*!*/
         /*!*zoom: 1;*!*/

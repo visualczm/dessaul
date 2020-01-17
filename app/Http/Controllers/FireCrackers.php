@@ -62,7 +62,7 @@ class FireCrackers extends Controller
 
        $img->text("承诺人", 10, 580, function($font) {
 
-           $font->file(public_path("font/Inkfree.ttf")); //字体的地址，地址错误会报GD库的错
+           $font->file(public_path("font/signature.ttf")); //字体的地址，地址错误会报GD库的错
 
            $font->size(16);
            // $font->color('#fdf6e3');
