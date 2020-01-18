@@ -10,29 +10,25 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('layui/css/layui.css') }}?v=2.5.5">
     <script type="text/javascript" src="{{ asset('layui/layui.js') }}?v=2.5.5"></script>
 <style>
-    #web_bg{
-        /*position:fixed;*/
-        /*top: 0;*/
-        /*left: 0;*/
-        /*margin: 0 auto;*/
-        /*width:100%;*/
-        /*!*height:100%;*!*/
-        /*!*max-width: 400px;*!*/
 
-        /*!*!*min-width: 1000px;*!*!*/
-        /*!*z-index:-10;*!*/
-        /*!*zoom: 1;*!*/
-        /*background-color: #fff;*/
-        /*background-repeat: no-repeat;*/
-        /*background-size: cover;*/
-        /*-webkit-background-size: cover;*/
-        /*-o-background-size: cover;*/
-        /*background-position: center 0;*/
-        background-image:url({{$imgpath[0]}});
 
+    body{  background-color:#002ba5 ;}
+    .web_bg{
+
+        background:url({{$imgpath[0]}}) no-repeat;
         background-size: 100% 100%;
-        min-width: 375px;
+        width: 336px;
+        height: 650px;
+        margin: 0 auto;
+
     }
+
+
+    .layui-col-md12{ position: absolute;
+        bottom: 80px;
+        /* left: 20px; */
+        width: 100%;
+        height: 150px;}
 
 
 
@@ -99,18 +95,30 @@
         }
     }
 
+    #actions{
+
+        top: 465px;
+        height: 150px;
+        width: 100%;
+        position: absolute;}
+
+    #itdone{position: absolute;
+        top: 45px;
+        height: 70px;
+        left: 80px;
+        width: 180px;
+       }
+
 </style>
 </head>
-<body id="web_bg">
-<div class="layui-container">
-        <div class="layui-row" >
-            <div class="layui-col-md12" >
+<body >
+<div class="layui-container web_bg">
 
-            <div id="dd" style="position:absolute;bottom: 0;height: 150px;width: 100%" >
+            <div id="actions">
                 <div class="layui-input-block">
                     <input type="text" name="yourname" lay-verify="title" autocomplete="off" placeholder="请输入姓名" class="layui-input">
                 </div>
-                <div id="itdone" style="position:absolute;top: 45px;height: 100px;width: 100%" >
+                <div id="itdone">
 
                 </div>
             </div>
@@ -121,16 +129,13 @@
         <img class="poster-img" src="" style=""/>
         </div>
 
-        </div>
 
-</div>
-<script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
 <script>
 
     layui.use(['jquery',['layer']], function(){
         $=layui.jquery;
         $('#web_bg').height(window.screen.height);
-        $('.layui-col-md12').css({"top":window.screen.height-40});
+       // $('.layui-col-md12').css({"top":(window.screen.height-250)});
 
         $('.poster-box').hide();
 
@@ -152,11 +157,11 @@
                 headers: {'X-CSRF-Token': $('meta[name=csrf-token]').attr('content')},
                 dataType: 'json',
                 beforeSend:function(){
-                    index=layer.load(1, {
-                        shade: [0.1,'#fff'] //0.1透明度的白色背景
-                    });
 
-                },
+                    index=layer.msg('<i class="layui-icon layui-icon-loading layui-icon layui-anim layui-anim-rotate layui-anim-loop" style="font-size: 30px; color: #1E9FFF;"></i></br>海报生成中...',{time:0});
+
+
+            },
                 success: function (d) {
 
                     layer.close(index);

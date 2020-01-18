@@ -24,11 +24,8 @@ Route::get('/product/search','\App\Http\Controllers\ProductController@search');/
 
 //Route::get('/product','\App\Http\Controllers\HomeController@product');//首页Index
 Route::get('/solution/{cases}','\App\Http\Controllers\SolutionController@show');
-
 Route::get('/about','\App\Http\Controllers\AboutController@index');
-
 Route::get('/firecrackers','\App\Http\Controllers\FireCrackers@index');
-
 Route::Post('/firecrackers/post','\App\Http\Controllers\FireCrackers@createFireCrackers');
 
 
