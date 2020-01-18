@@ -106,9 +106,12 @@
                 complete:function (e) {
 
                     $(".poster-img").attr('src',e.responseJSON.data);
-                    $(".poster-img").width($(window).width()-80);
-                    $(".poster-img").height($(window).height()-100);
+                    $x=$(window).width()-50;
+                    $y=$(window).height()-50;
+                     $(".poster-img").height($y);
+                    $(".poster-img").width($x);
                     layer.open({
+                        area: [$x+'px', $y+'px'],
 
                         type: 1,
                         shade: false,
