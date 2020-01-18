@@ -18,7 +18,7 @@
         /*width:100%;*/
         /*!*height:100%;*!*/
         /*!*max-width: 400px;*!*/
-        min-height: 750px;
+
         /*!*!*min-width: 1000px;*!*!*/
         /*!*z-index:-10;*!*/
         /*!*zoom: 1;*!*/
@@ -43,23 +43,23 @@
     .layui-container{padding: 0}
 </style>
 </head>
-<body>
+<body id="web_bg">
 <div class="layui-container">
         <div class="layui-row" >
-            <div class="layui-col-md12" id="web_bg">
+            <div class="layui-col-md12" >
 
-            <div style="position:absolute;bottom: 0;height: 190px;width: 100%" >
+            <div id="dd" style="position:absolute;bottom: 0;height: 150px;width: 100%" >
                 <div class="layui-input-block">
                     <input type="text" name="yourname" lay-verify="title" autocomplete="off" placeholder="请输入姓名" class="layui-input">
                 </div>
-                <div id="itdone" style="position:absolute;top: 45px;height: 80px;width: 100%" >
+                <div id="itdone" style="position:absolute;top: 45px;height: 100px;width: 100%" >
 
                 </div>
             </div>
         </div>
 
-        <div class="poster-box" style="display: none;">
-        <img class="poster-img" src=""/>
+        <div class="poster-box" style="display: none;min-height:650px;min-width: 320px">
+        <img class="poster-img" src="" style=""/>
         </div>
 
         </div>
@@ -70,12 +70,22 @@
 
     layui.use(['jquery',['layer']], function(){
         $=layui.jquery;
+        $('#web_bg').height(window.screen.height);
+        $('.layui-col-md12').css({"top":window.screen.height-80});
 
         $('.poster-box').hide();
 
         $("#itdone").click(function(){
             var name=$(" input[ name='yourname' ] ").val();
             var index;
+
+            if(!name)
+            {
+                layer.msg('请输入姓名');
+                return false;
+            }
+
+
             $.ajax({
                 type: 'POST',
                 url: '/firecrackers/post',
@@ -95,8 +105,8 @@
                 complete:function (e) {
 
                     $(".poster-img").attr('src',e.responseJSON.data);
-                    $(".poster-img").width($(window).width()-30);
-                    $(".poster-img").height($(window).height()-80);
+                    $(".poster-img").width($(window).width()-80);
+                    $(".poster-img").height($(window).height()-100);
                     layer.open({
 
                         type: 1,
@@ -104,6 +114,8 @@
                         title: false, //不显示标题
                         content: $('.poster-box'), //捕获的元素，注意：最好该指定的元素要存放在body最外层，否则可能被其它的相对元素所影响
                     });
+
+
 
 
                 }

@@ -37,16 +37,25 @@ class FireCrackers extends Controller
    public function createFireCrackers(Request $request)
    {
 
-      // dd($request -> all()); //表单过来的所有数据
-       $basePath="http://images.ahwes.com/";
-       $imgpath="";
+       $dtcount=Fire::find(1);
 
+      // dd($request -> all()); //表单过来的所有数据
+       $basePath="http://images.ahwes.com/fire/";
+       $imgpath="";
        if($request['company']=="police")
-       {$imgpath=$basePath."fireP_sg.jpg";}
+       {
+           $dtcount->count= (int)$dtcount->count+1;
+
+           $imgpath=$basePath."fireP_sg.jpg";
+
+           $c='我是第'.$dtcount->count.'个参与者';
+       }
        elseif($request['company']=="community")
        {
            $imgpath=$basePath."fireP_sg.jpg";
        }
+
+       $dtcount->save();
 
     // create Image from file
     $img = Image::make($imgpath); //背景图的地址
@@ -60,7 +69,7 @@ class FireCrackers extends Controller
 //           // $font->angle(45);
 //       });
 
-       $img->text("承诺人", 10, 580, function($font) {
+       $img->text("承诺人", 50, 680, function($font) {
 
            $font->file(public_path("font/signature.ttf")); //字体的地址，地址错误会报GD库的错
 
@@ -71,10 +80,10 @@ class FireCrackers extends Controller
            // $font->angle(45);
        });
        $yourname=$request['yourname'];
-       $x = mb_strlen($yourname)>2?8:10;
+       $x = mb_strlen($yourname)>2?40:50;
 
     // use callback to define details
-    $img->text($yourname, $x, 590, function($font) {
+    $img->text($yourname, $x, 715, function($font) {
     $font->file(public_path("font/signature.ttf")); //字体的地址，地址错误会报GD库的错
     $font->size(22);
     // $font->color('#fdf6e3');
@@ -84,7 +93,7 @@ class FireCrackers extends Controller
 });
 
 
-$img->text(now(), 10, 610, function($font) {
+$img->text(now(), 10, 750, function($font) {
     $font->file(public_path("font/signature.ttf"));
     $font->size(16);
     // $font->color('#fdf6e3');
@@ -93,17 +102,17 @@ $img->text(now(), 10, 610, function($font) {
     // $font->angle(45);
 });
 
-       $img->text('tesjkdjljlkjljljlw', 20, 685, function($font) {
-           //$font->file(public_path("font/signature.ttf"));
-           $font->size(16);
-            $font->color('#E7C844');
-           // $font->align('center');
+       $img->text($c, $img->width()/2-mb_strlen($c)*8, 792, function($font) {
+           $font->file(public_path("font/signature.ttf"));
+           $font->size(20);
+            $font->color('#fff');
+//            $font->align('right');
            // $font->valign('top');
            // $font->angle(45);
        });
 
 
-       $image = (string)$img->encode('png', 22);
+       $image = (string)$img->encode('png', 75);
        $base64_encode = 'data:image/png;base64,' . base64_encode($image);
 
 
@@ -117,16 +126,5 @@ $img->text(now(), 10, 610, function($font) {
    }
 
 
-    public  function toUnicode($string)
-    {
-        $str = mb_convert_encoding($string, 'UCS-2', 'UTF-8');
-        $arrstr = str_split($str, 2);
-        $unistr = '';
-        foreach ($arrstr as $n) {
-            $dec = hexdec(bin2hex($n));
-            $unistr .= '&#' . $dec . ';';
-        }
-        return $unistr;
-    }
 
 }

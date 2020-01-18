@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Fire extends Model
 {
-    protected $table="fire";
+    const UPDATED_AT = null;
+
+    protected $table="firecrackers";
 }
