@@ -40,19 +40,19 @@ class FireCrackers extends Controller
        $dtcount=Fire::find(1);
 
       // dd($request -> all()); //表单过来的所有数据
-       $basePath="http://images.ahwes.com/fire/";
+       $basePath="http://images.ahwes.com/fire";
        $imgpath="";
        if($request['company']=="police")
        {
            $dtcount->count= (int)$dtcount->count+1;
 
-           $imgpath=$basePath."fireP_sg.jpg";
+           $imgpath=$basePath."/fireP_sg.jpg";
 
            $c='我是第'.$dtcount->count.'个参与者';
        }
        elseif($request['company']=="community")
        {
-           $imgpath=$basePath."fireP_sg.jpg";
+           $imgpath=$basePath."/fireC_sg.jpg";
        }
 
        $dtcount->save();
