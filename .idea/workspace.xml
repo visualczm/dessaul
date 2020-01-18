@@ -211,7 +211,7 @@
       <workItem from="1578263728612" duration="6816000" />
       <workItem from="1578352084224" duration="8820000" />
       <workItem from="1578483602381" duration="2132000" />
-      <workItem from="1579250009204" duration="43576000" />
+      <workItem from="1579250009204" duration="45562000" />
     </task>
     <task id="LOCAL-00001" summary="fix linux lang zh-CN">
       <created>1574142940316</created>
@@ -521,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579314683825</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="禁止燃放">
+      <created>1579316072028</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1579316072028</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

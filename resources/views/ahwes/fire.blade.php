@@ -41,6 +41,64 @@
     .layui-input{background-color: transparent;font-size: 25px;color: white}
 
     .layui-container{padding: 0}
+
+    .msg{background-color:#393D49;color: white;padding: 10px 0;width:100%;opacity:0.6;position:absolute;font-size: 12px;font-weight: bold;text-align: center;
+        -webkit-animation-name: blinker;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-name: blinker;
+        -moz-animation-duration: 1s;
+        -moz-animation-timing-function: linear;
+        -moz-animation-iteration-count: infinite;
+        animation-name: blinker;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @-moz-keyframes blinker {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    @-webkit-keyframes blinker {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    @keyframes blinker {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
 </style>
 </head>
 <body id="web_bg">
@@ -58,8 +116,8 @@
             </div>
         </div>
 
-        <div class="poster-box" style="display: none;min-height:650px;min-width: 320px">
-            <p style="background-color:#393D49;color: white;padding: 10px;font-size: 12px;font-weight: bold;text-align: center"><i class="layui-icon layui-icon-ok-circle" style="font-size: 20px; color:white;"></i> 长按图片,保存后分享到朋友圈</p>
+        <div class="poster-box" style="display: none;">
+            <p class="msg"><i class="layui-icon layui-icon-ok-circle" style="font-size: 20px; color:white;"></i> 长按图片,保存后分享到朋友圈</p>
         <img class="poster-img" src="" style=""/>
         </div>
 
@@ -112,7 +170,7 @@
                     $(".poster-img").width($x);
                     layer.open({
                         area: [$x+'px', $y+'px'],
-
+                        scrollbar: false,
                         type: 1,
                         shade: false,
                         title: false, //不显示标题
