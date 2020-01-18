@@ -12,7 +12,15 @@
 <style>
 
 
-    body{  background-color:#002ba5 ;}
+    body{
+    @if($imgpath[2])
+        background-color:#002ba5;
+    @else
+      background-color:#cf1c02;
+
+        @endif
+
+    }
     .web_bg{
 
         background:url({{$imgpath[0]}}) no-repeat;
@@ -34,7 +42,19 @@
 
     .layui-input-block{width:50%;margin: 0 auto}
 
-    .layui-input{background-color: transparent;font-size: 25px;color: white}
+    .layui-input{
+
+     @if($imgpath[2])
+     background-color:#002ba5;
+
+        @else
+        background-color:#c2c0be;
+
+        @endif
+        width: 130px;
+        color:white;
+        margin-left: 20px;
+        font-size: 18px;text-align: center}
 
     .layui-container{padding: 0}
 
@@ -96,11 +116,19 @@
     }
 
     #actions{
-
+        @if($imgpath[2])
         top: 465px;
         height: 150px;
+        @else
+        top: 345px;
+        height: 150px;
+
+        @endif
+
         width: 100%;
-        position: absolute;}
+        position: absolute;
+
+    }
 
     #itdone{position: absolute;
         top: 45px;

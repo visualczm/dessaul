@@ -24,10 +24,10 @@ class FireCrackers extends Controller
         $imgpath=[];
 
         if($request['company']=="police")
-        {$imgpath=[$basePath."fireP_bg.jpg",$basePath."fireP_sg.jpg"];}
+        {$imgpath=[$basePath."fireP_bg.jpg",$basePath."fireP_sg.jpg",true];}
         elseif($request['company']=="community")
         {
-            $imgpath=[$basePath."fireC_bg.jpg",$basePath."fireC_sg.jpg"];
+            $imgpath=[$basePath."fireC_bg.jpg",$basePath."fireC_sg.jpg",false];
         }
 
         return view('ahwes.fire',compact('imgpath'));
@@ -49,67 +49,76 @@ class FireCrackers extends Controller
            $imgpath=$basePath."fireP_sg.jpg";
 
            $c='我是第'.$dtcount->count.'个参与者';
+
+           // create Image from file
+           $img = Image::make($imgpath); //背景图的地址
+
+           $img->text("承诺人", 50, 680, function($font) {
+
+               $font->file(public_path("font/signature.ttf")); //字体的地址，地址错误会报GD库的错
+               $font->size(25);
+           });
+           $yourname=$request['yourname'];
+           $x = mb_strlen($yourname)>2?40:50;
+           // use callback to define details
+           $img->text($yourname, $x, 715, function($font) {
+               $font->file(public_path("font/signature.ttf")); //字体的地址，地址错误会报GD库的错
+               $font->size(30);
+
+           });
+           $img->text(date('Y-m-d'), 45, 750, function($font) {
+               $font->file(public_path("font/signature.ttf"));
+               $font->size(16);
+
+           });
+           $img->text($c, $img->width()/2-mb_strlen($c)*8, 792, function($font) {
+               $font->file(public_path("font/signature.ttf"));
+               $font->size(20);
+               $font->color('#fff');
+           });
+
+
        }
        elseif($request['company']=="community")
        {
+           $dtcount->count2= (int)$dtcount->count2+1;
+
            $imgpath=$basePath."fireC_sg.jpg";
+
+           $c='我是第'.$dtcount->count2.'个参与者';
+           // create Image from file
+           $img = Image::make($imgpath); //背景图的地址
+
+           $img->text("承诺人", 120, 570, function($font) {
+
+               $font->file(public_path("font/signature.ttf")); //字体的地址，地址错误会报GD库的错
+               $font->size(25);
+           });
+           $yourname=$request['yourname'];
+           $x = mb_strlen($yourname)>2?110:120;
+           // use callback to define details
+           $img->text($yourname, $x, 600, function($font) {
+               $font->file(public_path("font/signature.ttf")); //字体的地址，地址错误会报GD库的错
+               $font->size(30);
+
+           });
+           $img->text(date('Y-m-d'), 120, 620, function($font) {
+               $font->file(public_path("font/signature.ttf"));
+               $font->size(16);
+
+           });
+           $img->text($c, $img->width()/2-mb_strlen($c)*8, 792, function($font) {
+               $font->file(public_path("font/signature.ttf"));
+               $font->size(20);
+               $font->color('#fff');
+           });
+
+
        }
 
        $dtcount->save();
 
-    // create Image from file
-    $img = Image::make($imgpath); //背景图的地址
 
-//       $img->text('我是第参与者', 100, 1730, function($font) {
-//           $font->file(public_path().'\font\signature.ttf'); //字体的地址，地址错误会报GD库的错
-//           $font->size(45);
-//           // $font->color('#fdf6e3');
-//           // $font->align('center');
-//           // $font->valign('top');
-//           // $font->angle(45);
-//       });
-
-       $img->text("承诺人", 50, 680, function($font) {
-
-           $font->file(public_path("font/signature.ttf")); //字体的地址，地址错误会报GD库的错
-
-           $font->size(16);
-           // $font->color('#fdf6e3');
-           // $font->align('center');
-           // $font->valign('top');
-           // $font->angle(45);
-       });
-       $yourname=$request['yourname'];
-       $x = mb_strlen($yourname)>2?40:50;
-
-    // use callback to define details
-    $img->text($yourname, $x, 715, function($font) {
-    $font->file(public_path("font/signature.ttf")); //字体的地址，地址错误会报GD库的错
-    $font->size(22);
-    // $font->color('#fdf6e3');
-    // $font->align('center');
-    // $font->valign('top');
-     //$font->angle(45);
-});
-
-
-$img->text(now(), 10, 750, function($font) {
-    $font->file(public_path("font/signature.ttf"));
-    $font->size(16);
-    // $font->color('#fdf6e3');
-    // $font->align('center');
-    // $font->valign('top');
-    // $font->angle(45);
-});
-
-       $img->text($c, $img->width()/2-mb_strlen($c)*8, 792, function($font) {
-           $font->file(public_path("font/signature.ttf"));
-           $font->size(20);
-            $font->color('#fff');
-//            $font->align('right');
-           // $font->valign('top');
-           // $font->angle(45);
-       });
 
 
        $image = (string)$img->encode('png', 75);
