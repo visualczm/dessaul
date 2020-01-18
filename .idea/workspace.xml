@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c2e0085a-bebe-4dfd-8e41-771c9de78b1b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FireCrackers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FireCrackers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Fire.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Fire.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/ahwes/fire.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ahwes/fire.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -213,7 +211,7 @@
       <workItem from="1578263728612" duration="6816000" />
       <workItem from="1578352084224" duration="8820000" />
       <workItem from="1578483602381" duration="2132000" />
-      <workItem from="1579250009204" duration="40656000" />
+      <workItem from="1579250009204" duration="42335000" />
     </task>
     <task id="LOCAL-00001" summary="fix linux lang zh-CN">
       <created>1574142940316</created>
@@ -509,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579305111169</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="禁止燃放">
+      <created>1579313014028</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1579313014028</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

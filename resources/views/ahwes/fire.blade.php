@@ -59,6 +59,7 @@
         </div>
 
         <div class="poster-box" style="display: none;min-height:650px;min-width: 320px">
+            <p style="background-color:#393D49;color: white;padding: 10px;font-size: 12px;font-weight: bold;text-align: center"><i class="layui-icon layui-icon-ok-circle" style="font-size: 20px; color:white;"></i> 长按图片,保存后分享到朋友圈</p>
         <img class="poster-img" src="" style=""/>
         </div>
 
@@ -71,7 +72,7 @@
     layui.use(['jquery',['layer']], function(){
         $=layui.jquery;
         $('#web_bg').height(window.screen.height);
-        $('.layui-col-md12').css({"top":window.screen.height-80});
+        $('.layui-col-md12').css({"top":window.screen.height-40});
 
         $('.poster-box').hide();
 
